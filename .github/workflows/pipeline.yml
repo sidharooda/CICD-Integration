@@ -11,7 +11,7 @@ jobs:
         run: |
           $BatchscheduleID = 'BS00701'
           $params = @{
-            Uri = 'http://localhost:8080/test-automation-via-cicd'
+            Uri = 'http://192.168.31.199:8080/test-automation-via-cicd'
             Method = 'POST'
             Body = @{
               Usernameofbreez = 'athira.sobhana@tesquirel.com'
