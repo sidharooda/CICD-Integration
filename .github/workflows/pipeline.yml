@@ -9,15 +9,15 @@ jobs:
     steps:
       - name: Call REST API
         run: |
-          $BatchscheduleID = 'BS00701'
+          $BatchscheduleID = 'BS00707'
           $params = @{
-            Uri = 'http://192.168.31.199:8080/test-automation-via-cicd'
+            Uri = 'http://52.66.119.140:8080/test-automation-via-cicd'
             Method = 'POST'
             Body = @{
               Usernameofbreez = 'athira.sobhana@tesquirel.com'
               Passwordofbreez = 'Tsq@1234'
               BatchscheduleID = $BatchscheduleID
-              IpAddress = 'http://localhost:8080/'
+              IpAddress = 'http://52.66.119.140:8080/'
             }
           }
           Invoke-RestMethod @params
