@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Call REST API
         run: |
-          $BatchscheduleID = 'BS00707'
+          $BatchscheduleID = 'BS00711'
           $params = @{
             Uri = 'http://52.66.119.140:8080/test-automation-via-cicd'
             Method = 'POST'
